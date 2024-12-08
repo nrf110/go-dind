@@ -26,6 +26,6 @@ jobs:
         with:
           subFolder: .github
           imageName: ${{ github.repository }}
-          cacheFrom: ${{ github.repository }}
+          # cacheFrom: ${{ github.repository }}
           platform: arm64,amd64
           push: always
