@@ -1,0 +1,27 @@
+name: Dev Container Build and Push Image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    tags:
+      - "v.*.*.*"
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Docker Login
+        run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      - name: Pre-build devcontainer image
+        uses: devcontainers/ci@v0.3
+        with:
+          subFolder: .github
+          imageName: ${{ github.repository }}
+          cacheFrom: ${{ github.repository }}
+          push: always
