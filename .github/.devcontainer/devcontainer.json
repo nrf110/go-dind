@@ -9,7 +9,8 @@
     "ghcr.io/marcozac/devcontainer-features/buf:1": {
       "version": "1.39.0"
     },
-    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
   },
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "runArgs": [
@@ -17,16 +18,5 @@
     "--security-opt",
     "seccomp=unconfined"
   ],
-  "remoteUser": "vscode",
-  "customizations": {
-    "jetbrains": {
-      "backend": "GoLand",
-      "plugins": [
-        "com.github.intellij.ginkgo",
-        "com.intellij.bigdatatools.core",
-        "com.intellij.bigdatatools.kafka",
-        "org.intellij.plugins.hcl"
-      ]
-    }
-  }
+  "remoteUser": "vscode"
 }
