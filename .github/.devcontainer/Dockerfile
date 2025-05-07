@@ -22,8 +22,4 @@ RUN curl --proto '=https' --tlsv1.2 -fsSL https://github.com/gruntwork-io/terrag
   && mv terragrunt /usr/local/bin/terragrunt \
   && chmod +x /usr/local/bin/terragrunt
 
-RUN npx playwright install-deps
-
 USER vscode
-
-RUN npx playwright install
