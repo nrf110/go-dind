@@ -10,7 +10,8 @@
       "version": "1.39.0"
     },
     "ghcr.io/devcontainers/features/python:1": {},
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers-extra/features/sops:1": {}
   },
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "runArgs": [
