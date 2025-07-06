@@ -7,12 +7,18 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/marcozac/devcontainer-features/buf:1": {
-      "version": "1.53.0"
+      "version": "1.55.1"
     },
     "ghcr.io/devcontainers/features/python:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/dhoeric/features/google-cloud-cli:1": {},
     "ghcr.io/devcontainers-extra/features/sops:1": {},
-    "ghcr.io/devcontainers-extra/features/lefthook-asdf:1": {}
+    "ghcr.io/devcontainers-extra/features/lefthook-asdf:1": {},
+    "ghcr.io/nrf110/devcontainer-features/claude-code:1": {},
+    "ghcr.io/robbert229/devcontainer-features/opentofu:1": {
+      "version": "1.10.0"
+    },
+    "ghcr.io/devcontainers-extra/features/terragrunt:1": {}
   },
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "runArgs": [
